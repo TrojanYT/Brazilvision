@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+  padding-left: 40px;
+  background-image: url('https://i.ibb.co/s3MZccD/111533-blue-and-white-background-2560x1600-hd.jpg'); /* Substitua 'URL_DA_IMAGEM' pela URL da imagem desejada */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir o contêiner */
+  background-position: center;
+  position: relative; /* Adiciona posição relativa para o posicionamento absoluto do retângulo */
+}
+
+.state {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 8px;
+  width: 200px;
+  background-color: #00AFEF;
+  font-family: "Futura Extrabold", sans-serif;
+}
+
+.state-name {
+  order: 1;
+}
+
+.state-score {
+  order: 2;
+}
+
+.vertical-rectangle {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 210px;
+  height: 50%;
+  background-color: transparent; /* Substitua pela cor desejada */
+  border: 2px solid #000000;
+  z-index: 1;
+}
