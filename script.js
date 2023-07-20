@@ -16,7 +16,7 @@ function animateStateOrder() {
 
   let offsetY = 0;
   states.forEach((state, index) => {
-    const stateHeight = state.offsetHeight + 5; // Ajuste o valor '5' conforme necessário para o espaçamento entre estados
+    const stateHeight = state.offsetHeight + 45; // Ajuste o valor '5' conforme necessário para o espaçamento entre estados
     state.style.transform = `translateY(${offsetY}px)`;
     offsetY += stateHeight;
   });
