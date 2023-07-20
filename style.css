@@ -1,22 +1,24 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   padding-left: 40px;
-  background-image: url('https://i.ibb.co/s3MZccD/111533-blue-and-white-background-2560x1600-hd.jpg'); /* Substitua 'URL_DA_IMAGEM' pela URL da imagem desejada */
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir o contêiner */
+  background-image: url('https://i.ibb.co/s3MZccD/111533-blue-and-white-background-2560x1600-hd.jpg');
+  background-size: cover;
   background-position: center;
-  position: relative; /* Adiciona posição relativa para o posicionamento absoluto do retângulo */
+  position: relative;
 }
 
 .state {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Adiciona alinhamento vertical ao centro dos estados */
   border: 1px solid black;
   padding: 8px;
   width: 200px;
   background-color: #00AFEF;
   font-family: "Futura Extrabold", sans-serif;
+  transition: transform 0.3s ease-in-out;
 }
 
 .state-name {
@@ -33,7 +35,7 @@
   right: 30px;
   width: 210px;
   height: 50%;
-  background-color: transparent; /* Substitua pela cor desejada */
+  background-color: transparent;
   border: 2px solid #000000;
   z-index: 1;
 }
