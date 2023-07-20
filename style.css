@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -6,13 +12,16 @@
   background-image: url('https://i.ibb.co/s3MZccD/111533-blue-and-white-background-2560x1600-hd.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
+  width: 1920px; /* Definir a largura do contêiner */
+  height: 1080px; /* Definir a altura do contêiner */
 }
 
 .state {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Adiciona alinhamento vertical ao centro dos estados */
+  align-items: center;
   border: 1px solid black;
   padding: 8px;
   width: 200px;
@@ -27,15 +36,4 @@
 
 .state-score {
   order: 2;
-}
-
-.vertical-rectangle {
-  position: absolute;
-  top: 0;
-  right: 30px;
-  width: 210px;
-  height: 50%;
-  background-color: transparent;
-  border: 2px solid #000000;
-  z-index: 1;
 }
