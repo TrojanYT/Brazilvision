@@ -14,7 +14,7 @@ function animateStateOrder() {
     return scoreB - scoreA; // Ordena em ordem decrescente com base nos pontos
   });
 
-  let offsetY = 0;
+  let offsetY = 50;
   states.forEach((state, index) => {
     const stateHeight = state.offsetHeight + 5; // Ajuste o valor '5' conforme necessário para o espaçamento entre estados
     state.style.transform = `translateY(${offsetY}px)`;
