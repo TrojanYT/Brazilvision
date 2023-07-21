@@ -7,7 +7,7 @@ html, body {
 .container {
   display: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   padding-left: 40px;
   background-image: url('https://i.ibb.co/s3MZccD/111533-blue-and-white-background-2560x1600-hd.jpg');
   background-size: cover;
